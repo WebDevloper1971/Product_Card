@@ -1,1 +1,1 @@
-![Main-Img](https://github.com/WebDevloper1971/ui-components/blob/main/product-review-card/snapshot.png)
+![Main-Img](https://github.com/WebDevloper1971/Product_Card/blob/main/snapshot.png)
