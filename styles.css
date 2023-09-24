@@ -5,6 +5,7 @@
 }
 
 body{
+
     font-family: 'Open Sans', sans-serif;
     display: flex;
     height: 100svh;
@@ -18,42 +19,52 @@ body{
 .card-container{
     
     border:none;
-    width: 600px;
+    width: 800px;
     height: 400px;
     display: flex;
-    gap: 3px;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    /* background-color: rgb(245, 245, 245); */
+
+    /* border: 2px solid red; */
+    
 }
 
 .img-container{
     flex:1;
-    border:none;
+    border: 1px solid grey;
+    border-right: none;
+   
+}
 
-    background-image: url(https://images.pexels.com/photos/3685523/pexels-photo-3685523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-
+.img-container img{
+    width: 100%;
+    height: 100%;
 }
 
 .info-container{
     flex:1;
-    border:none;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     gap: 1.5rem;
-    padding: 10px;
+    padding: 0.5rem;
+    border: 1px solid grey;
+    border-left: none;
    
 }
 
 .product-headings{
-    border:none;
+    /* border:1px solid grey; */
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.2rem;
+    padding: 0.5rem;
 
-    
+    color: black;
+
+    translate: 0 -50px;
+    background-color: plum;
+
+    /* text-align: center; */
 }
 
 .product-type{
@@ -66,6 +77,7 @@ body{
     font-size: 1.5rem;
     border:none;
     
+    
 }
 
 .product-description{
@@ -74,6 +86,8 @@ body{
     text-align: justify;
     line-height: 1.5rem;
     font-size: 0.9rem;
+
+    translate: 0px -20px;
 }
 
 .product-prices{
@@ -96,25 +110,40 @@ body{
 .cart-btn{
     border:none;
     padding: 0.2rem;
+    display: flex;
+    gap: 1rem;
 }
 
-.cart-btn button{
-    width: 100%;
+.cart-btn button:nth-child(1){
+    flex: 1;
     height: 3rem;
-    background-color: crimson;
-    border:none;
-    color: white;
+    border: none;
     font-size: 1rem;
+    border-radius: 0.6rem;
+    background-color: orange;
 }
 
+.cart-btn button:nth-child(2){
+    flex: 1;
+    height: 3rem;
+    background-color: lightgreen;
+    border:none;
+    font-size: 1rem;
+    border-radius: 0.6rem;
+}
+
+.cart-btn button:hover{
+    background: black;
+    color: white;
+}
 
 @media (width <= 605px) {
    
    .card-container{
     flex-direction: column;
-    height: 100%;
+    height: 100svh;
     width: 100%;
-   }
+   }  
 
   
 }
